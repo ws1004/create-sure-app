@@ -1,0 +1,44 @@
+{
+  "name": "create-sure",
+  "version": "1.0.0",
+  "author": "Sure Wang",
+  "description": "",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "type": "module",
+  "bin": {
+    "create-sure-app": "./dist/index.mjs"
+  },
+  "files": [
+    "index.js",
+    "dist",
+    "template"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "start": "esno src/index.ts",
+    "release": "npm publish"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ws1004/create-sure-app"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.7.18",
+    "@types/prompts": "^2.0.14",
+    "bumpp": "^8.2.1",
+    "esno": "^0.16.3",
+    "kolorist": "^1.6.0",
+    "pnpm": "^7.11.0",
+    "unbuild": "^0.8.11"
+  },
+  "dependencies": {
+    "create-sure-app": "link:",
+    "fs-extra": "^10.1.0",
+    "prompts": "^2.4.2"
+  }
+}
