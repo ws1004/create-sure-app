@@ -1,6 +1,6 @@
 {
   "name": "create-sure-app",
-  "version": "1.1.4",
+  "version": "1.1.0",
   "author": "Sure Wang",
   "description": "",
   "main": "./dist/index.mjs",
