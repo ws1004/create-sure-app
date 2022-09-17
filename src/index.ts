@@ -1,5 +1,5 @@
 import { fileURLToPath } from 'url'
-import { green, blue, cyan } from 'kolorist'
+import { green, blue, cyan, white } from 'kolorist'
 import { join, resolve, dirname } from 'path'
 
 import fs from 'fs-extra'
@@ -16,6 +16,16 @@ const FRAMEWORKS: FrameworkItem[] = [
       {
         name: 'vue3',
         color: green
+      }
+    ]
+  },
+  {
+    name: 'node',
+    color: green,
+    variants: [
+      {
+        name: 'koa',
+        color: white
       }
     ]
   }
@@ -114,8 +124,8 @@ async function init() {
     运行命令:
 
       cd ${cyan(projectName)}
-      npm install
-      npm run dev
+      pnpm install
+      pnpm run dev
   `)
 }
 
