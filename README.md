@@ -11,7 +11,7 @@ npm install create-sure-app -g
 ## 使用
 
 ```sh
-create-sure-app
+npx create-sure-app
 ```
 
 ## 已有
